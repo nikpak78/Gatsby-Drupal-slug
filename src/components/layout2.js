@@ -11,16 +11,15 @@ import { useStaticQuery, graphql } from "gatsby"
 import Nava from "./nava"
 import Footer from "./footer"
 import Header from "./header"
-
 import "./layout.css"
 import { Container,
 } from "reactstrap"
-import Image from './image2'
+import StyledBackgroundSection from "./StyledBackgroundSection"
 
 
-const Layout = ({ children }) => {
+const Layout2 = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
+    query SitTitleQuery {
       site {
         siteMetadata {
           title
@@ -35,22 +34,19 @@ const Layout = ({ children }) => {
      
       <Container>
       <Nava />
+      <StyledBackgroundSection />
       
-      <Image />
-     
-      <Header siteTitle={data.site.siteMetadata.title} />
-     
+      <Header sitTitle={data.site.siteMetadata.title} />
+      
         <main>{children}</main>
-        
       <Footer />
-      
       </Container>
     </>
   )
 }
 
-Layout.propTypes = {
+Layout2.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default Layout2

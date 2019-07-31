@@ -8,6 +8,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+footer {
+  background-color: rgb(34, 80, 93);
+  padding: 16px;
+  text-align: center;
+  color: rgb(238, 238, 227);
+}
+footer a {
+  color: rgb(255, 182, 11);
+}
 article,
 aside,
 details,
@@ -322,6 +331,9 @@ h6 {
   font-size: 0.78405rem;
   line-height: 1.1;
 }
+.teaser {
+  display: flex;
+}
 hgroup {
   margin-left: 0;
   margin-right: 0;
@@ -452,6 +464,13 @@ form {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+}
+.pano a {
+color: rgb(255, 255, 255);
+font-weight: bold;
+}
+.navbar-toggler-icon {
+  background-color: rgb(248, 244, 231);
 }
 noscript {
   margin-left: 0;
