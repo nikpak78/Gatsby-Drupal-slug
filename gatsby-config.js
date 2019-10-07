@@ -31,7 +31,7 @@ module.exports = {
     {
       resolve: `gatsby-source-drupal`,
       options: {
-        baseUrl: `https://pcbase.gr/`,
+        baseUrl: `http://localhost`,
         apiBase: `jsonapi`, // optional, defaults to `jsonapi`
       },
     },

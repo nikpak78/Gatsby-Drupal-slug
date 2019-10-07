@@ -1,6 +1,7 @@
 const path = require(`path`)
 const transliteration = require('transliteration')
 
+
 // Create a slug for each article and set it as a field on the node.
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
